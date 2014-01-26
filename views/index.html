@@ -1,0 +1,240 @@
+<!doctype html>
+
+<! -- Quick demo example of html forms interacting with external programs -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Example - Form </title>
+
+		<meta name="" content="Test">
+	
+		<link rel="stylesheet" href="/stylesheets/stylesheet1.css" type="text/css" /> 	
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+	
+    <script> 
+$( "#target" ).submit(function( event ) {
+  alert( "Handler for .submit() called." );
+  event.preventDefault();
+});
+
+$( "#other" ).click(function() {
+  $( "#target" ).submit();
+});
+
+    </script>		
+
+</head>
+
+<body>
+
+
+
+
+	<div class="header_container">
+		<div class = "menu_container">
+			<ul class="bullets"></ul>
+		</div>
+	
+	</div>
+<br><br>
+
+
+	<div class="subMainContainer">
+
+		<article class="kontext">
+		
+		<!--      Layer One        -->
+			<div class="layer one show">
+			<br>
+				<div class="headerText">
+					<h2>Enkät 1</h2>
+				</div>
+				<br><br><br><br><br>						
+			
+				<div class="main_bgcontainer">
+	
+	<!--
+				<div class="form_container">
+		-->							
+									
+									
+					<form name="add_comments" method="post" action="/">
+						<br>
+						1. Vad heter deltagaren?<br> <input name="S1_Q1_1" type="text"  /><br><br> 
+						Hur bra är läget just nu? <br>  
+											
+							<input type="radio" name="S1_Q2_1" value="1">
+							<input type="radio" name="S1_Q2_1" value="2">
+							<input type="radio" name="S1_Q2_1" value="3">
+							<input type="radio" name="S1_Q2_1" value="4">
+							<input type="radio" name="S1_Q2_1" value="5">
+					
+						<br><br>
+						
+						Frågor på detta? <br> <input name="S1_Q2_2" type="text" /> <br><br>
+
+						Hur bra är det imorgon? <br>  
+							<input type="radio" name="S1_Q3_1" value="1">
+							<input type="radio" name="S1_Q3_1" value="2">
+							<input type="radio" name="S1_Q3_1" value="3">
+							<input type="radio" name="S1_Q3_1" value="4">
+							<input type="radio" name="S1_Q3_1" value="5">
+						<br><br>
+						
+						Vad är det du inte fattar? <br> <input name="S1_Q3_2" type="text" /> <br><br>					
+
+
+						Kommentarer:<br> 
+						<textarea name = "S1_Q4_1" rows="10" cols="30"> </textarea>
+						<input type="submit" name = "submit" value="Submit" />
+					</form>						
+				<!--					
+				</div>
+	-->
+				</div>	
+			</div>
+			
+				<!--      Layer Two        -->
+		
+			<div class="layer two">
+			<br>
+				<div class="headerText">
+					<h2>Enkät 2</h2>
+				</div>
+				<br><br><br><br><br>
+				<div class="main_bgcontainer">
+
+				<div class="form_container">
+					<form name="add_comments" method="post" action="/">
+						<br>
+
+						Fråga 1 <br>  
+											
+							<input type="radio" name="S2_Q1_1" value="1">
+							<input type="radio" name="S2_Q1_1" value="2">
+							<input type="radio" name="S2_Q1_1" value="3">
+							<input type="radio" name="S2_Q1_1" value="4">
+							<input type="radio" name="S2_Q1_1" value="5">
+					
+						<br><br>
+						
+						Kommentar <br> <input name="S2_Q1_2" type="text" /> <br><br>
+
+						Fråga 2? <br>  
+							<input type="radio" name="S2_Q2_1" value="1">
+							<input type="radio" name="S2_Q2_1" value="2">
+							<input type="radio" name="S2_Q2_1" value="3">
+							<input type="radio" name="S2_Q2_1" value="4">
+							<input type="radio" name="S2_Q2_1" value="5">
+						<br><br>
+						
+						Kommentar <br> <input name="S2_Q2_2" type="text" /> <br><br>					
+
+						Fråga 3? <br>  
+							<input type="radio" name="S2_Q3_1" value="1">
+							<input type="radio" name="S2_Q3_1" value="2">
+							<input type="radio" name="S2_Q3_1" value="3">
+							<input type="radio" name="S2_Q3_1" value="4">
+							<input type="radio" name="S2_Q3_1" value="5">
+						<br><br>
+						
+						Kommentar <br> <input name="S2_Q3_2" type="text" /> <br><br>
+
+						Fråga 4? <br>  
+							<input type="radio" name="S2_Q4_1" value="1">
+							<input type="radio" name="S2_Q4_1" value="2">
+							<input type="radio" name="S2_Q4_1" value="3">
+							<input type="radio" name="S2_Q4_1" value="4">
+							<input type="radio" name="S2_Q4_1" value="5">
+						<br><br>
+						
+						Kommentar <br> <input name="S2_Q4_2" type="text" /> <br><br>						
+
+
+					</form>		
+				</div>
+
+				
+				
+				</div>
+			
+			</div>
+
+		
+			<!--      Layer Three        -->
+		
+			<div class="layer three">
+			<br>
+				<div class="headerText">
+					<h2>Enkät 3</h2>
+				</div>
+				<br><br><br><br><br>
+			
+				<div class="main_bgcontainer">
+			
+				<div class="form_container">
+					<form name="add_comments" method="post" action="php/Recieve_message.php">
+						<br>
+						First name:<br> <input name="first_name" type="text"  /><br> 
+						Last name:<br>  <input name="last_name" type="text" /> <br>
+						Email address (required):<br> <input name="email_address" type="text" /> <br><br>
+						Company:<br> <input name="company" type="text" /> <br>
+						Topic:<br> <input name="topic" type="text" /> <br>
+					
+
+						Message:<br> 
+						<textarea name = "comment" rows="10" cols="30"> </textarea>
+						<input type="submit" name = "submit" value="Submit" />
+					</form>			
+				</div>
+				<br> <br> <br> 
+				</div>
+
+			</div>
+			
+		</article>
+	
+	
+	
+		<div class="colright">
+			<div class="newslist">
+				<h3>  </h3>	
+				<br>
+				<img src="/images/smslogo.png" height="550 %" >
+
+			</div>
+					
+			
+		</div>
+	</div>
+	
+<!--
+	<div class="footer">
+		<img src="images/TestGradientF_2.png" height="100 %" >
+	</div>
+-->
+		<script src="js/kontext.js"></script>
+<!--
+// Temporary code found somewhere on web for demo, replace with normal tabs/CSS-transitions only (i.e remove js below) 
+-->
+		<script>
+			var k = kontext( document.querySelector( '.kontext' ) );
+			var bulletsContainer = document.body.querySelector( '.bullets' );
+
+			for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+				var bullet = document.createElement( 'li' );
+				bullet.className = i === 0 ? 'active' : '';
+				bullet.setAttribute( 'index', i );
+				bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bulletsContainer.appendChild( bullet );			
+			}
+
+		</script>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</body>
+</html>
