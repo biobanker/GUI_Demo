@@ -16,7 +16,9 @@ var express = require('express'),
 
 
 var app = express();
-var curFilename = 'data/sample.xlsx';
+//var curFilename = 'data/sample.xlsx';
+var curFilename = 'data/Testfile3.xlsx';
+var curFilenameOut = 'data/Testfile4.xlsx';
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
@@ -37,6 +39,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+
+
  
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
@@ -48,10 +52,10 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(request, response){
-  var surveyArray = [request.body.S1_Q1_1, request.body.S1_Q2_1, request.body.S1_Q2_2, request.body.S1_Q3_1, request.body.S1_Q3_2, request.body.S1_Q4_1];
+  var surveyArray = [request.body.S1_Q1_1, request.body.S1_Q2_1, request.body.S1_Q2_2, request.body.S1_Q3_1, request.body.S1_Q3_2];
   for (var i = 0; i < surveyArray.length; i++)
     console.log("Submitted argument: " + surveyArray[i]);
-  var reciept = filehandler.writeToFile(surveyArray, curFilename, 'sheet1');
+  var reciept = filehandler.writeToFile(surveyArray, curFilenameOut, 'sheet1');
 });
 
 
@@ -59,7 +63,6 @@ app.post('/', function(request, response){
 filemonitor.watchFile(curFilename, function (curr, prev) {
   console.log('the current mtime is: ' + curr.mtime);
   console.log('the previous mtime was: ' + prev.mtime);
-  
   if (String(curr.mtime).localeCompare(String(prev.mtime)) != 0)
   {
   excelParser.parse({ inFile: curFilename, worksheet: 1, skipEmpty: true, searchFor: { term: [''], type: 'loose'} },
@@ -68,7 +71,6 @@ filemonitor.watchFile(curFilename, function (curr, prev) {
   var ad2 = filehandler.openBrowser('http://localhost:3000', records)
 });  
       } 
-  
 });
 
 
