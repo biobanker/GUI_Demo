@@ -1,0 +1,262 @@
+{
+    "name": "Site_1",
+    
+    "children":
+    [
+    {
+        "name": "Building_1",
+        "children":
+        [
+        {
+            
+            "name": "Room_1",
+            "children":
+            [
+            {
+                "name": "Freezer_1",
+                "children":
+                [
+                {
+                    "name": "Rack_A1",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },
+               {
+                    "name": "Rack_B2",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },                
+               {
+                    "name": "Rack_C3",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                }                
+                
+                
+                ]
+
+            },
+            
+            
+            {
+                "name": "Freezer_1",
+                "children":
+                [
+                {
+                    "name": "Rack_A1",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },
+               {
+                    "name": "Rack_B2",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },                
+               {
+                    "name": "Rack_C3",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                }                
+                
+                
+                ]
+
+            },
+            {
+                "name": "Freezer_1",
+                "children":
+                [
+                {
+                    "name": "Rack_A1",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },
+               {
+                    "name": "Rack_B2",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                },                
+               {
+                    "name": "Rack_C3",
+                    "children":
+                    [
+                    {                
+                        "name": "Box_1",
+                        "size": 1
+                    },
+                        
+                    {                
+                        "name": "Box_2",
+                        "size": 1
+
+                        },
+                        
+                    {                
+                        "name": "Box_3",
+                        "size": 1
+                        }                        
+                    
+                    ]
+                }                
+                
+                
+                ]
+
+            }
+                        
+            ]
+        }
+        ,
+        {
+        "name": "Room_2",
+        "children":
+            [
+            {
+            "name": "Unstructured freezer",
+            "size": 1               
+            }
+            ]
+            
+        }
+        ]    
+    }
+
+    
+    ]
+}
